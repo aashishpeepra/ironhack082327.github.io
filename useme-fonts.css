@@ -1,0 +1,31 @@
+
+@font-face {
+  font-family: "gloria";
+  src:url("GloriaHallelujah.ttf");
+}
+
+@font-face{
+  font-family: "kalam-light";
+  src: url("Kalam-Light.ttf");
+}
+@font-face{
+  font-family:"kalam-regular";
+  src:url("Kalam-Regular.ttf");
+}
+@font-face {
+  font-family:"kalam-bold";
+  src:url("Kalam-Bold.ttf")
+}
+
+@font-face{
+  font-family: "kdam";
+  src:url("KdamThmor-Regular.ttf");
+}
+@font-face{
+  font-family:"krona";
+  src:url("KronaOne-Regular.ttf");
+}
+@font-face{
+  font-family:"lobster";
+  src:url("Lobster-Regular.ttf");
+}
