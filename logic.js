@@ -68,6 +68,7 @@ function move(iden) {
         }
         if (done >= 9 && res == 0) {
             document.getElementById("playershow").innerHTML = "NO ONE WINS";
+            new Effect.Fold("displayer",{duration:4});
             res = 1;
         }
     }
