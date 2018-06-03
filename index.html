@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile 2</title>
+    <script src="prototype.js"></script>
+    <script src="aculos/effects.js"></script>
+    <link rel="stylesheet" href="useme-fonts.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var resm1=0;
+        function message(){
+            var obj=new Date();
+            var hour=obj.getHours();
+            var min=obj.getMinutes();
+            var resh,ress;
+            if(hour<18){
+                ress=60-min;
+                hour=hour+1;
+                resh=18-hour;
+                document.getElementById("meeting").innerHTML=resh+" Hours "+ress+" minutes left to meet";
+            }
+            else{
+                document.getElementById("meeting").innerHTML="already met";
+            }
+
+        }
+        function closer(){
+            document.getElementById("quotation").style.display="none";
+        }
+        function displayer(){
+            document.getElementById("btt1").style.display="none";
+            document.getElementById("quotation").style.display="block";
+        }
+        function message2(){
+            if(resm1!=1) {
+                setTimeout("callthis()", 15000);
+                resm1=1;
+            }
+        }
+        function callthis(){
+            var ans=confirm("TUM BHUT BEAUTIFUL HO NA (cancel= no, okay=yes)" );
+            if(ans==true){
+                var ans2=confirm("OHHO TUM HAMSE PYAAR KARTI HO NA?");
+                if(ans2==false){
+                    alert("HURRRR");
+                }
+                else{
+                    alert("DEKHAAA !! MWWWAAAM");
+                }
+            }
+            else{
+                var ans3=confirm("Nahi Pehle Bolo YES, tum beautiful ho");
+                if(ans3==true){
+                    alert("THANKS PRINCESS");
+                }
+                else{
+                    alert("BHuooopp BISHOOM :-)")
+                }
+            }
+        }
+        function boother1(){
+            document.getElementById("booth1").style.display="none";
+            document.getElementById("exbt1").style.display="block";
+            document.getElementById("inpic1").style.display="block";
+        }
+        function displaypics() {
+            document.getElementById("imagebox1").style.display="block";
+            setTimeout("extra1()",1000);
+        }
+        function extra1(){
+            new Effect.Opacity("imagebox1",{from:0,to:1,duration:3});
+        }
+        function picboxcloser(){
+            document.getElementById("imagebox1").style.display="none";
+        }
+        function carder(){
+            document.getElementById("card1").style.backgroundImage="url(site_pics/site2.png)";
+            document.getElementById("textcard1").innerHTML="Teri Aankhon Ki, Namkeen Mastiyaan....\n" +
+                "Teri Hansi Ki, Beparwaah Gustakhiyaan....\n" +
+                "Teri Zulfon Ki, Lehraati Angdaiyaan....\n" +
+                "Nahi Bhoolunga Main....\n" +
+                "Jab Tak Hai Jaan !!!\n" +
+                "Jab Tak Hai Jaan !!!";
+            document.getElementById("card1").style.paddingTop="0px";
+            document.getElementById("card2").style.height="290px";
+        }
+        function carder2(){
+            document.getElementById("card2").style.backgroundImage="url(site_pics/site13.jpg";
+            document.getElementById("textcard2").innerHTML="Tareef karu mai kya uski, \n"+"jisne tumhe banaya! \n"+"Aaye zo zindagi mai tum meri \n"+
+                    "Har Pal ko Haseen Bnaya,";
+            document.getElementById("card2").style.paddingTop="75px";
+        }
+        function message3(){
+            alert("Haaye Bichari Bore Hogyi Na Padh Padh Kar");
+            alert("MMMMWWWAA!");
+        }
+        function message4(){
+            setTimeout("alert('Seriously yrr, tumne to poora padha, itna pyaar karti ho hamse, sooch kya rhi ho thanks na bolna jab mile kas k kiss kar dena?')",20000);
+        }
+    </script>
+    <style>
+
+        .bdyimg{
+            background-color: #ff0044;
+        }
+
+        p.heading{
+            font-family:lobster,sans-serif;
+            font-size:32px;
+            color:black;
+            font-weight:bold;
+        }
+        div.heading1{
+            margin-top:20px;
+            position: static;
+           background-color: #ff0066;
+        }
+        p.subhead1{
+            font-family: mina-bold,sans-serif;
+            font-size:16px;
+        }
+        div.quote{
+            background-color: #1a53af;
+            height:144px;
+            width:auto;
+            border:1px black solid;
+            display: none;
+        }
+        p.quote1{
+            font-family: kalam-light,sans-serif;
+            font-size:16px;
+            color:white;
+        }
+        div.photobooth{
+            height: 400px;
+            width:auto;
+            background-color: deeppink;
+        }
+        div.booth1{
+            height:212px;
+            width:auto;
+            background-color: #ff0066;
+        }
+        img.pic1{
+            height:210px;
+            width:auto;
+        }
+        div.extrab1{
+            display: none;
+            height:300px;
+            width:auto;
+            background-color: #ff0066;
+        }
+        img.insider1{
+            display:none;
+            height:250px;
+            width:auto;
+        }
+        p.imagehead{
+            font-family: kaushan, sans-serif;
+            font-size:24px;
+            color:white;
+            font-style: italic;
+        }
+        img.picture3{
+            height:205px;
+            width:auto;
+            margin-left:4px;
+            margin-top:2px;
+        }
+        div.ihead{
+            background-color: #1a53af;
+        }
+        div.headingbar{
+            height:80px;
+            width:auto;
+            background-color: #1a53af;
+        }
+        p.subhead2{
+            font-family:anton, sans-serif;
+            font-size:32px;
+            color:white;
+        }
+        div.cards{
+            height:280px;
+            width:auto;
+            background-color: #99ff66;
+            background-size: cover;
+            padding-top:100px;
+        }
+        p.oncard{
+            margin-top:10px;
+            background-color: black;
+            opacity:0.4;
+            color:white;
+            font-size:20px;
+            font-family: gloria,sans-serif;
+        }
+        img.imgbox{
+            height:125px;
+            width:100%;
+        }
+        div.imagebox_{
+            border: 1px black solid;
+            background-color: #0088ff;
+        }
+
+    </style>
+</head>
+<body onload="message()" >
+<div class="bdyimg" onclick="message2()">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="text-center heading1" >
+            <p class="heading">Miss. Saumya</p>
+                <p class="subhead1" id="meeting"></p>
+                <button class="btn btn-info extra" id="btt1" onclick="displayer()">Tap to see magic</button>
+            </div>
+
+            <div class="quote text-center" id="quotation">
+                <p class="quote1" >
+                "The girl whom i have loved like noone else,
+                who loves me like noone else can,
+                whose eyes are the prettiest ones i ever saw,
+                with a smile like angel from heaven,
+                who when blush make boys die,
+                whoes voice make me sleep best,
+                A day on her name -By Aashish"
+                </p>
+                <button class="btn btn-danger" onclick="closer()">Click to close</button>
+            </div>
+            <div class="text-center well" style="margin-top:5px;">
+
+                <button class="btn btn-danger" onclick="displaypics()">Click to see Gallery</button>
+            </div>
+            <!--
+            <div class="photobooth">
+                <div class="rows">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div id="booth1" class="img-thumbnail" onclick="boother1()">
+                            <img src="site_pics/face2.jpeg" id="1pic" alt="your pic" title="Sharma's Picture"  class="img-responsive pic1">
+                        </div>
+                        <div class="extrab1" id="exbt1">
+                            <button class="btn btn-danger" onclick="prevb1()">Previous </button> <button class="btn btn-danger" onclick="postb1()">Next</button>
+                            <img class="img-responsive insider1" alt="Your cute pics" src="site_pics/face1.jpeg" id="inpic1">
+                            <img class="img-responsive insider1" alt="Your cute pics" src="site_pics/face3.jpeg" id="inpic2">
+                            <img class="img-responsive insider1" alt="Your cute pics" src="site_pics/face2.jpeg" id="inpic3">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            -->
+            <div class="rows text-center "  id="imagebox1" style="display: none">
+                <div class="ihead">
+                <p class="imagehead"> Gallery</p>
+                </div>
+                <p class="imagehead">Tumhara Sharmana</p>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/face1.jpeg" alt="Saumya's Pic" title="Sharma ji ka sharmana" class="img-respomsive picture3">
+                </div>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/face2.jpeg" alt="Saumya's Pic" title="Sharma ji ka sharmana" class="img-respomsive picture3">
+                </div>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/face3.jpeg" alt="Saumya's Pic" title="Sharma ji ka sharmana" class="img-respomsive picture3">
+                </div>
+                <p  class="imagehead">Early Meetings</p>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/firstmet.jpeg" alt="Saumya's Pic" title="First Meeting" class="img-respomsive picture3">
+                </div>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/motijheel.jpeg" alt="Saumya's Pic" title="Motijheel Pictures" class="img-respomsive picture3">
+                </div>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/motijheel1.jpeg" alt="Saumya's Pic" title="MotiJheel Picture 2" class="img-respomsive picture3">
+                </div>
+                <p class="imagehead">To Meeting Now</p>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/motijheel2.jpeg" alt="Saumya's Pic" title="First Meeting" class="img-respomsive picture3">
+                </div>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/us1.jpeg" alt="Saumya's Pic" title="Motijheel Pictures" class="img-respomsive picture3">
+                </div>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/us2.jpeg" alt="Saumya's Pic" title="MotiJheel Picture 2" width="200" class="img-respomsive picture3">
+                </div>
+                <p class="imagehead">Your Gorgeous Looks</p>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/lit.jpeg" alt="Saumya's Pic" title="A lit pic" class="img-respomsive picture3">
+                </div>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/saree.jpeg" alt="Saumya's Pic" title="Picture in saree" class="img-respomsive picture3">
+                </div>
+                <div class="col-sm-4 col-xs-4 col-md-4" >
+                    <img src="site_pics/styler.jpeg" alt="Saumya's Pic" title="Beautiful Poses" class="img-respomsive picture3">
+                </div>
+                <p class="imagehead">To Out Lit Moves</p>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img style="float:right;" src="site_pics/shorts.jpeg" alt="Her Picture" class="img-responsive picture3">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img  src="site_pics/me.jpeg" alt="Her Picture" class="img-responsive picture3">
+                </div>
+                <p class="imagehead">From holding hands to Kisses Now</p>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img style="float:right;" src="site_pics/hands.jpeg" alt="Her Picture" class="img-responsive picture3">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img  src="site_pics/kissme.jpeg" alt="Her Picture" class="img-responsive picture3">
+                </div>
+                <p class="imagehead">Upto Your Hot Haircute</p>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img style="float:right;" src="site_pics/hairs.jpeg" alt="Her Picture" class="img-responsive picture3">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img  src="site_pics/hairs2.jpeg" alt="Her Picture" class="img-responsive picture3">
+                </div>
+                <div class="col-sm-6 col-xs-6 col-md-6">
+                <p class="imagehead">And then finally this Pic<br/>Thanks Me later Haha!</p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img src="site_pics/google.jpeg" style="float: inside;" class="img-responsive picture3" alt="Picture With Glasses">
+                </div>
+                <button class="btn btn-info" onclick="picboxcloser()">Tap To Close</button>
+            </div>
+            <div class="headingbar text-center">
+                <p class="subhead2">
+                    Tareef Section
+                </p>
+            </div>
+                    <div class="rows" style="background-color: #1a53af;">
+                <div class="col-xs-6 col-md-6 col-sm-6" style="background-color: #1a53af;">
+                    <div class="cards" id="card1" onclick="carder()">
+                        <p class="oncard" id="textcard1">Tareef 1 TAP!</p>
+                    </div>
+                </div>
+                        <div class="col-xs-6 col-md-6 col-md-6" style="background-color: #1a53af;">
+                            <div class="cards" id="card2" onclick="carder2()">
+                                <p class="oncard" id="textcard2">Tareef 2 TAP!</p>
+                            </div>
+                        </div>
+            </div>
+            <div class="imagebox_ text-center">
+                <img src="site_pics/name2.jpg" alt="Your Name Logo" title="LOGO" class="img-responsive imgbox">
+                <p style="font-size:24px; color:white; font-family: anton,sans-serif;">Who Is She?</p>
+                <p style="font-family: kalam-regular,sans-serif; color:white; font-size:16px; background-color: black; opacity:0.5;">Hard to tell.She is sometimes a girl, sometimes a women and sometimes a baby
+                .Sometimes she is the most mature person you can find, so sometimes she is the naughtiest girl! She will scold you on your mistakes
+                but will come back, will hug you and help you come up with them.She won't be able to match up eyes with you, but she will hold hands
+                to tell how deep she is in love.She will ask you for your choices but will buy whatever she likes. Its difficult to make her fall for you but when
+                she does fall for you, its like the heaven in your hands!She is hard to understand but when you know her upto her deeps, its irresistible to fall in love with her.</p>
+            </div>
+            <div class="imagebox_ text-center" style="background-color: springgreen;">
+                <p style="font-size:24px; color:white; font-family: anton,sans-serif;">Where To Find Her</p>
+                <p style="font-family: kalam-regular,sans-serif; color:white; font-size:16px; background-color: black; opacity:0.5;">Oh! Its Almost impossible to catch her.
+                She is a beautiful imagination, each time you close your eyes, and think of her crooning voice, her laugh, her ora, the faint sweet smell around her
+                    you will find her next to you. </p>
+            </div>
+            <div class="imagebox_ text-center" style="background-color: red" onclick="message3()" >
+                <p style="font-size:24px; color:white; font-family: anton,sans-serif;" >Why is she so Beautiful?</p>
+                <p style="font-family: kalam-regular,sans-serif; color:white; font-size:16px; background-color: black; opacity:0.7;">Yeah! Nice Question, but she
+                ain't only beautiful but she is pretty, charming,graceful,comely,cheer,attractive,sweet,wonderful(all synonyms i know lol)! She is what called Beauty,
+                Her eyes, Her blush, those expressions can make anyone get butterflies, Atleast i die at her smile.And her beauty is still a secret, scientists are stil working
+                    on it.</p>
+            </div>
+            <div onclick="message4()" class="imagebox text-center" style="background-image: url('site_pics/marry.jpg'); height:200px; width:auto; background-size:cover; padding-top: 200px;">
+                <p style="font-family: kalam-regular,sans-serif; color:white; font-size:16px; background-color: black; opacity:0.7;">Actually , in these all days, months years and seconds,
+                i just realized how awesomly we fit each other, like there is nothing to be chaotic, we are so nice together, you make me feel happy,warm,cozy and so more,
+                you do up on your promisses, and never let me down, we cuddle, we kiss, but at last, at end of dawn, we call,talk and share stuff like a family does,
+                thats what make me ask this, Will You Marry Me, I can't promise ki tumpar koi mushkil nahi ane dunga, but i can swear whatever tum face karogi mai hamesha
+                saath honga, hanth pakad kar tumhare paas, tumhare liye, hamesha!Batao Saath dogi,8318530887 par call karke apna answer bataye aur moka jitiya hamse milne ka </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
