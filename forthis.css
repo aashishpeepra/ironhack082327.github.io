@@ -1,0 +1,85 @@
+body{
+    background-image: url("logo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.navbar{
+    opacity: 0.9;
+    height:70px;
+}
+.nav{
+    font-size: 17px;
+    font-weight: bold;
+}
+.nav:hover{
+    font-size:20px;
+}
+.navbar-header{
+    font-size: 20px;
+    font-weight: bold;
+}
+p.tmsgp{
+    color: inherit;
+    opacity:0.4;
+    font-family:anton, sans-serif;
+    font-size:32px;
+    letter-spacing: 2px;
+}
+div.box2{
+    height:500px;
+    width:auto;
+}
+.fontbox2{
+    font-family: anton, sans-serif;
+    font-size: 48px;
+    max-font-size:48px ;
+    min-font-size: 9px;
+    background-color:black;
+    opacity: 0.6;
+    color:white;
+    display: block;
+}
+div.inbox2txt{
+    height:425px;
+    width:auto;
+    padding-top: 75px;
+    padding-bottom: auto;
+}
+.fontbox2ul{
+    font-family: anton, sans-serif;
+    font-size: 24px;
+    color:white;
+    background-color:black;
+    opacity:0.8;
+}
+.fontbox3{
+    background-color: white;
+    color:black;
+    font-size:48px;
+    font-family: anton, sans-serif;
+    opacity: 0.7;
+}
+.awardbox{
+    height:55px;
+    width:auto;
+    background-color:white;
+    opacity:0.7;
+    color:black;
+    font-family: anton, sans-serif;
+}
+.exttxt{
+    font-family: anton ,sans-serif;
+    font-size:20px;
+    color:black;
+}
+#enbx:hover{
+    height:370px;
+}
+#enbx{
+    height: 300px;
+}
+#whitebx{
+    width:auto;
+}
